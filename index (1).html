@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUPTHALINGA & CO | Chartered Accountants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .brand-blue { color: #002b66; }
+        .bg-brand-blue { background-color: #002b66; }
+        .brand-green { color: #1e7e34; }
+        .bg-brand-green { background-color: #1e7e34; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-4">
+                <div class="flex flex-col items-center border-r-2 border-slate-300 pr-4">
+                    <span class="text-3xl font-bold tracking-tight text-blue-900 flex items-center">
+                        C<span class="brand-green">A</span>
+                    </span>
+                    <span class="text-[10px] uppercase font-bold tracking-[0.2em] text-slate-500">India</span>
+                </div>
+                <div>
+                    <h1 class="text-2xl sm:text-3xl font-extrabold brand-blue tracking-wide">GUPTHALINGA & CO</h1>
+                    <p class="text-xs font-semibold tracking-widest text-slate-500 uppercase mt-0.5">— Chartered Accountants —</p>
+                </div>
+            </div>
+            
+            <div>
+                <a href="#contact" class="bg-brand-blue text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-blue-900 transition-colors shadow-md">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-4">
+                <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase border border-blue-500/30">
+                    Lead Partner
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">CA Gupthalinga, <span class="text-blue-400">ACA</span></h2>
+                <p class="text-lg text-slate-300 max-w-md">
+                    Providing elite financial advice, rigorous audit control, and structural tax solutions to empower your company's commercial growth.
+                </p>
+            </div>
+
+            <div class="bg-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/10 shadow-xl space-y-6">
+                <h3 class="text-xl font-semibold text-blue-300 border-b border-white/10 pb-3">Contact Information</h3>
+                
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-emerald-400 shrink-0">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-slate-400">Call/WhatsApp</p>
+                        <a href="tel:+917349306067" class="text-lg font-medium hover:text-emerald-400 transition-colors">+91 7349306067</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-slate-400">Email Address</p>
+                        <a href="mailto:contact@gupthalinga.com" class="text-lg font-medium hover:text-blue-400 transition-colors break-all">contact@gupthalinga.com</a>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs uppercase tracking-wider text-slate-400">Office Address</p>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            14/1 First Main Road, Near Nagasandra Circle,<br>
+                            Thyagarajanagar, Bengaluru - 560004
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex-grow">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-xs uppercase tracking-[0.25em] font-bold text-slate-400 mb-2">Capabilities</h2>
+            <h3 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Our Professional Services</h3>
+            <div class="w-12 h-1 bg-brand-green mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="lg:col-span-4 space-y-3 flex flex-col" id="services-tabs">
+                
+                <button onclick="switchTab('compliance')" id="tab-compliance" class="service-tab-btn flex items-center gap-4 w-full p-4 text-left rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-200 outline-none hover:bg-slate-100 hover:scale-[1.01]">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg shrink-0 shadow-inner">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="block text-xs font-bold uppercase text-slate-400 tracking-wider">01 . Management</span>
+                        <h4 class="font-bold text-slate-800 text-base">Compliance</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-slate-400 ml-auto text-sm transition-transform"></i>
+                </button>
+
+                <button onclick="switchTab('audit')" id="tab-audit" class="service-tab-btn flex items-center gap-4 w-full p-4 text-left rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-200 outline-none hover:bg-slate-100 hover:scale-[1.01]">
+                    <div class="w-10 h-10 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-lg shrink-0 shadow-inner">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="block text-xs font-bold uppercase text-slate-400 tracking-wider">02 . Verification</span>
+                        <h4 class="font-bold text-slate-800 text-base">Audit Services</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-slate-400 ml-auto text-sm transition-transform"></i>
+                </button>
+
+                <button onclick="switchTab('advisory')" id="tab-advisory" class="service-tab-btn flex items-center gap-4 w-full p-4 text-left rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-200 outline-none hover:bg-slate-100 hover:scale-[1.01]">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg shrink-0 shadow-inner">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="block text-xs font-bold uppercase text-slate-400 tracking-wider">03 . Strategy</span>
+                        <h4 class="font-bold text-slate-800 text-base">Financial Advisory</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-slate-400 ml-auto text-sm transition-transform"></i>
+                </button>
+
+                <button onclick="switchTab('litigation')" id="tab-litigation" class="service-tab-btn flex items-center gap-4 w-full p-4 text-left rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-200 outline-none hover:bg-slate-100 hover:scale-[1.01]">
+                    <div class="w-10 h-10 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-lg shrink-0 shadow-inner">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="block text-xs font-bold uppercase text-slate-400 tracking-wider">04 . Legal Representation</span>
+                        <h4 class="font-bold text-slate-800 text-base">Tax Litigation</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-slate-400 ml-auto text-sm transition-transform"></i>
+                </button>
+
+                <button onclick="switchTab('diligence')" id="tab-diligence" class="service-tab-btn flex items-center gap-4 w-full p-4 text-left rounded-xl border border-slate-200 bg-white shadow-sm transition-all duration-200 outline-none hover:bg-slate-100 hover:scale-[1.01]">
+                    <div class="w-10 h-10 rounded-lg bg-teal-50 text-teal-600 flex items-center justify-center text-lg shrink-0 shadow-inner">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <span class="block text-xs font-bold uppercase text-slate-400 tracking-wider">05 . Risk Mitigation</span>
+                        <h4 class="font-bold text-slate-800 text-base">Financial Due Diligence</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-right text-slate-400 ml-auto text-sm transition-transform"></i>
+                </button>
+
+            </div>
+
+            <div class="lg:col-span-8 bg-white rounded-2xl border border-slate-200 p-6 sm:p-10 shadow-md min-h-[380px] flex flex-col justify-between">
+                
+                <div id="service-content" class="transition-all duration-300 opacity-100 transform translate-x-0">
+                    </div>
+
+                <div class="mt-8 pt-6 border-t border-slate-100 flex items-center justify-between flex-wrap gap-4">
+                    <span class="text-xs font-medium text-slate-400 flex items-center gap-2">
+                        <i class="fa-regular fa-circle-check text-brand-green"></i> Certified Corporate Operational Excellence
+                    </span>
+                    <a href="#contact" class="text-xs font-bold uppercase tracking-wider text-blue-900 hover:text-emerald-600 transition-colors flex items-center gap-1">
+                        Inquire about this service <i class="fa-solid fa-arrow-right-long text-sm"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <section id="contact" class="bg-slate-100 border-t border-slate-200 py-12">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Need Strategic Accounting Consultation?</h3>
+            <p class="text-slate-600 mb-6">Reach out immediately using our direct hotline or official electronic mail details above.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:+917349306067" class="inline-flex items-center gap-2 bg-brand-green text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-emerald-700 transition-colors">
+                    <i class="fa-solid fa-phone"></i> Call Partner Office
+                </a>
+                <a href="mailto:contact@gupthalinga.com" class="inline-flex items-center gap-2 bg-brand-blue text-white px-6 py-3 rounded-lg font-medium shadow-md hover:bg-blue-900 transition-colors">
+                    <i class="fa-solid fa-envelope"></i> Drop Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 text-xs py-6 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Gupthalinga & Co. All Rights Reserved.</p>
+            <p class="text-slate-500">Designed securely under professional guidelines.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Data Registry holding all image features mapping cleanly
+        const servicesData = {
+            compliance: {
+                title: "Compliance Management",
+                subtitle: "Ensuring regulatory integrity, risk mitigation, and corporate governance compliance tracking.",
+                badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+                icon: "fa-clipboard-check text-emerald-600",
+                list: [
+                    "GST Compliance & Returns filing setup",
+                    "Income Tax Compliance for corporate & individual entities",
+                    "TDS Compliance processing & periodic returns tracking",
+                    "End-to-End Bookkeeping and customized management reporting",
+                    "Timely Filings and structural adherence to evolving structural laws.",
+                    "ROC (Registrar of Companies) and other critical statutory filings"
+                ]
+            },
+            audit: {
+                title: "Audit & Assurance",
+                subtitle: "Rigorous corporate evaluations checking performance transparency and structural validity.",
+                badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+                icon: "fa-magnifying-glass-chart text-blue-600",
+                list: [
+                    "Statutory Audit processing under legal mandate structures",
+                    "Internal Audit assessments ensuring internal control metrics",
+                    "Tax Audit compliance verifying underlying financial statements",
+                    "Stock Audit management validating physical inventory structures"
+                ]
+            },
+            advisory: {
+                title: "Financial Advisory",
+                subtitle: "Custom business-intelligence strategy maps driving organizational growth trajectories.",
+                badgeColor: "bg-indigo-50 text-indigo-700 border-indigo-200",
+                icon: "fa-chart-line text-indigo-600",
+                list: [
+                    "Financial reporting, custom MIS structuring, and diagnostic business analysis",
+                    "Cash flow structure analysis protecting organizational liquidity frameworks",
+                    "Budgeting and corporate financial forecasting strategies"
+                ]
+            },
+            litigation: {
+                title: "Tax Litigation & Representation",
+                subtitle: "Elite advocacy and corporate defense options across legislative tax platforms.",
+                badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
+                icon: "fa-scale-balanced text-amber-600",
+                list: [
+                    "Authoritative Representation before ITAT, Income Tax Department, and other statutory authorities",
+                    "Advisory & comprehensive direct representation before the Income Tax Department",
+                    "Strategic assistance in structural tax disputes, assessments, and active legal proceedings"
+                ]
+            },
+            diligence: {
+                title: "Financial Due Diligence",
+                subtitle: "In-depth corporate threat verification mapping transactional risk profiling.",
+                badgeColor: "bg-teal-50 text-teal-700 border-teal-200",
+                icon: "fa-chart-pie text-teal-600",
+                list: [
+                    "Buy-side and sell-side structural corporate due diligence investigations",
+                    "Granular review of balance sheets, underlying financial statements, and latent operational risks",
+                    "Valuation support metrics combined with transaction advisory insights"
+                ]
+            }
+        };
+
+        function switchTab(key) {
+            const tabButtons = document.querySelectorAll('.service-tab-btn');
+            const targetButton = document.getElementById(`tab-${key}`);
+            const contentBox = document.getElementById('service-content');
+            const data = servicesData[key];
+
+            // 1. Structural Styling Update to highlight active tab selection
+            tabButtons.forEach(btn => {
+                btn.classList.remove('border-blue-900', 'bg-blue-50/50', 'ring-2', 'ring-blue-900/10');
+                btn.classList.add('border-slate-200', 'bg-white');
+                const icon = btn.querySelector('.fa-chevron-right');
+                if (icon) icon.classList.remove('translate-x-1', 'text-blue-900');
+            });
+
+            targetButton.classList.remove('border-slate-200', 'bg-white');
+            targetButton.classList.add('border-blue-900', 'bg-blue-50/50', 'ring-2', 'ring-blue-900/10');
+            const targetChevron = targetButton.querySelector('.fa-chevron-right');
+            if (targetChevron) targetChevron.classList.add('translate-x-1', 'text-blue-900');
+
+            // 2. Content view update using clean CSS animation transitions
+            contentBox.classList.add('opacity-0', '-translate-x-2');
+
+            setTimeout(() => {
+                // Building HTML structurally for the focused items dynamically
+                let listsHtml = '';
+                data.list.forEach(item => {
+                    listsHtml += `
+                        <li class="flex items-start gap-3 text-slate-600">
+                            <span class="w-2 h-2 rounded-full bg-brand-green mt-2 shrink-0"></span>
+                            <span class="text-base font-medium">${item}</span>
+                        </li>
+                    `;
+                });
+
+                contentBox.innerHTML = `
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider border ${data.badgeColor}">
+                                Focus Sector
+                            </span>
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight flex items-center gap-3">
+                            <i class="fa-solid ${data.icon} text-xl sm:text-2xl"></i> ${data.title}
+                        </h3>
+                        <p class="text-slate-500 text-sm sm:text-base italic max-w-2xl">${data.subtitle}</p>
+                        <ul class="grid sm:grid-cols-1 gap-4 pt-4 max-w-3xl">
+                            ${listsHtml}
+                        </ul>
+                    </div>
+                `;
+
+                contentBox.classList.remove('opacity-0', '-translate-x-2');
+                contentBox.classList.add('opacity-100', 'translate-x-0');
+            }, 150);
+        }
+
+        // Initialize default active target display state window securely on window load
+        document.addEventListener('DOMContentLoaded', () => {
+            switchTab('compliance');
+        });
+    </script>
+</body>
+</html>
